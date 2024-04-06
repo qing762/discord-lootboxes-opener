@@ -61,7 +61,7 @@ To automate the lootbox opening process, follow the steps below:
 
 1. [Fork the project.](https://github.com/qing762/discord-lootboxes-opener/fork)
 
-2. [You can set the intervals between each execution at line 5 by using cron format.](https://github.com/qing762/discord-lootboxes-opener/blob/master/.github/workflows/automate.yml) (This is completely optional, by default it's every minute once)
+2. [You can set the intervals between each execution at line 5 by using cron format.](https://github.com/qing762/discord-lootboxes-opener/blob/master/.github/workflows/automate.yml) (This is completely optional, by default it's every 5 minutes once)
 
 3. Go to your forked repository, head to Settings > Secrets and Variables > Actions and click the button `New Repository secret`.
 
