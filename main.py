@@ -43,12 +43,17 @@ def main():
 
 if __name__ == "__main__":
     times = input(
-        "How many times you wish to open? Leave blank for default (1)\nValue: "
+        "How many times you wish to open? Leave blank for default (∞)\nValue: "
     )
     print()
-    times = int(times) if times else 1
-    for times in range(times):
-        main()
-        print("\n")
-        time.sleep(2)
+    if times:
+        for x in range(int(times)):
+            main()
+            print("\n")
+            time.sleep(3)
+    else:
+        while True:
+            main()
+            print("\n")
+            time.sleep(3)
     print("Done!")
