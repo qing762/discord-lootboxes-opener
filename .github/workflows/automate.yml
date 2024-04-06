@@ -27,7 +27,8 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
       - name: Run code
+        working-directory: .github/workflows
         run: |
-          python main.py
+          python workflow.py
         env:
           AUTH_VALUE: ${{ secrets.AUTH_VALUE }}
