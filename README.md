@@ -1,4 +1,9 @@
 > [!NOTE]  
+> **This project is deprecated due to Discord closed the event & endpoint, eventually breaking this tool.**
+
+---
+
+> [!NOTE]  
 > Join the [Discord server](https://qing762.is-a.dev/discord) for issues. Thanks a lot!
 
 > [!WARNING]
