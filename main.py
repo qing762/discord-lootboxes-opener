@@ -1,5 +1,4 @@
 import requests
-import fake_useragent
 import os
 import base64
 import time
@@ -10,9 +9,9 @@ load_dotenv()
 
 def checkDotEnv():
     checkDotenv = os.path.isfile("./.env")
-    if checkDotenv == True:
+    if checkDotenv is True:
         auth = os.environ.get("AUTH_VALUE")
-        if auth != None:
+        if auth is not None:
             return True
         else:
             with open(".env", "w") as x:
@@ -27,7 +26,7 @@ def checkDotEnv():
                 ".env file couldn't be found.\nThis might be your first time running this script. It has been added.\n"
             )
             auth = os.environ.get("AUTH_VALUE")
-            if auth != None:
+            if auth is not None:
                 print(
                     "Seems like you had set the 'AUTH_VALUE' in your .env file / pc environment variables. Continuing...\n"
                 )

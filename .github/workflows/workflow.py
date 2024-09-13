@@ -1,5 +1,4 @@
 import requests
-import fake_useragent
 import os
 import base64
 import time
